@@ -1,0 +1,9 @@
+.top-bar {
+    margin-bottom: 1rem;
+}
+
+#pdf-renderer {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+}
