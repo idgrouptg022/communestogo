@@ -65,26 +65,26 @@ function queueRenderPage(num) {
 /**
    * Displays previous page.
    */
-// function onPrevPage() {
-//     if (pageNum <= 1) {
-//     return;
-//     }
-//     pageNum--;
-//     queueRenderPage(pageNum);
-// }
-// document.getElementById('prev_page').addEventListener('click', onPrevPage);
+function onPrevPage() {
+    if (pageNum <= 1) {
+    return;
+    }
+    pageNum--;
+    queueRenderPage(pageNum);
+}
+document.getElementById('prev_page').addEventListener('click', onPrevPage);
 
 /**
    * Displays next page.
    */
-// function onNextPage() {
-//     if (pageNum >= pdfDoc.numPages) {
-//         return;
-//     }
-//     pageNum++;
-//     queueRenderPage(pageNum);
-// }
-// document.getElementById('next_page').addEventListener('click', onNextPage);
+function onNextPage() {
+    if (pageNum >= pdfDoc.numPages) {
+        return;
+    }
+    pageNum++;
+    queueRenderPage(pageNum);
+}
+document.getElementById('next_page').addEventListener('click', onNextPage);
 
 /**
    * Asynchronously downloads PDF.

@@ -20,6 +20,18 @@
         <div class="maquette-container">
             <span id="pdfDoc" hidden data-url="https://faitiere.test/auth/cmpdf/{{ $commune }}"></span>
             <div class="pdf-container">
+                <div class="top-bar">
+                    <button class="btn" id="prev_page">
+                        <i class="fas fa-arrow-left"></i> Page prec.
+                    </button>
+                    <button class="btn" id="next_page">
+                        Page suiv.
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    {{-- <span class="page-info">
+                        Page <span id="page_num"></span> sur <div id="page_count"></div>
+                    </span> --}}
+                </div>
                 <canvas id="pdf-renderer"></canvas>
             </div>
         </div>

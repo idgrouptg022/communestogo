@@ -7,3 +7,13 @@
     height: auto;
     border: 1px solid #ccc;
 }
+
+.btn {
+    all: unset;
+    margin-right: 1rem;
+    padding: .5rem 1rem;
+    border: 1px solid #ccc;
+    font-family: montserrat-medium;
+    cursor: pointer;
+    border-radius: .5rem;
+}
